@@ -1,0 +1,82 @@
+/*
+  MrSpicy.strings (English — base / fallback language)
+  MR. SPICY UI v1.0.0
+
+  Rules:
+   - Every key defined in SpicyStringKey must exist here.
+   - English is the fallback table: a key missing from another language falls
+     back to this file and is reported through SpicyL10n.missingKeyHandler.
+   - validate_localization.py enforces key parity across all tables.
+*/
+
+/* Header */
+"spicy.header.title" = "MR. SPICY";
+"spicy.header.subtitle" = "Interface layer";
+"spicy.header.close" = "Close";
+"spicy.header.minimise" = "Minimise";
+"spicy.header.expand" = "Expand";
+"spicy.header.settings" = "Settings";
+
+/* Actions */
+"spicy.action.ok" = "OK";
+"spicy.action.cancel" = "Cancel";
+"spicy.action.close" = "Close";
+"spicy.action.retry" = "Try again";
+"spicy.action.done" = "Done";
+"spicy.action.back" = "Back";
+"spicy.action.learn_more" = "Learn more";
+
+/* States */
+"spicy.state.loading" = "Loading…";
+"spicy.state.success" = "Done";
+"spicy.state.error" = "Something went wrong";
+"spicy.state.unavailable" = "Unavailable";
+"spicy.state.disabled" = "Disabled";
+"spicy.state.selected" = "Selected";
+"spicy.state.on" = "On";
+"spicy.state.off" = "Off";
+
+/* Settings */
+"spicy.settings.title" = "Settings";
+"spicy.settings.section.general" = "General";
+"spicy.settings.section.appearance" = "Appearance";
+"spicy.settings.section.accessibility" = "Accessibility";
+"spicy.settings.section.about" = "About";
+"spicy.settings.language" = "Language";
+"spicy.settings.language.hint" = "Changes the interface language and layout direction.";
+"spicy.settings.appearance" = "Theme";
+"spicy.settings.appearance.system" = "Match system";
+"spicy.settings.appearance.dark" = "Dark";
+"spicy.settings.appearance.light" = "Light";
+"spicy.settings.reduce_motion" = "Reduce Motion";
+"spicy.settings.reduce_motion.hint" = "Mirrors the iOS setting. Change it in iOS Settings › Accessibility.";
+"spicy.settings.larger_text" = "Text size";
+"spicy.settings.larger_text.hint" = "Mirrors the iOS Dynamic Type setting.";
+"spicy.settings.high_contrast" = "Increase contrast";
+"spicy.settings.compact_layout" = "Compact layout";
+"spicy.settings.version" = "Interface version";
+"spicy.settings.help" = "Help";
+"spicy.settings.legal" = "Legal";
+"spicy.settings.reset.title" = "Reset interface settings?";
+"spicy.settings.reset.message" = "Language and appearance return to their defaults. Nothing else is affected.";
+"spicy.settings.reset.confirm" = "Reset";
+
+/* Language */
+"spicy.language.title" = "Language";
+"spicy.language.english" = "English";
+"spicy.language.arabic" = "العربية";
+"spicy.language.changed" = "Language changed";
+
+/* About */
+"spicy.about.title" = "About";
+"spicy.about.ui_layer_version" = "Interface layer version";
+"spicy.about.design_system" = "Design system";
+"spicy.about.credits" = "Credits";
+
+/* Accessibility */
+"spicy.a11y.logo" = "MR. SPICY logo";
+"spicy.a11y.panel" = "MR. SPICY panel";
+"spicy.a11y.modal" = "Dialog";
+"spicy.a11y.tile.hint" = "Opens this section";
+"spicy.a11y.row.hint" = "Opens more options";
+"spicy.a11y.badge.value" = "Status: %@";

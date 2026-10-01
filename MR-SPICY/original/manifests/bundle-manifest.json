@@ -1,0 +1,164 @@
+{
+ "app_bundle": "pool.app",
+ "bundle_identifier": "com.miniclip.8ballpoolmult",
+ "display_name": "8 Ball Pool",
+ "short_version": "56.30.0",
+ "build_version": "5328",
+ "executable": "pool",
+ "minimum_os_version": "13.0",
+ "sdk": "iphoneos26.2",
+ "device_family": [
+  1,
+  2
+ ],
+ "orientations_iphone": [
+  "UIInterfaceOrientationLandscapeRight",
+  "UIInterfaceOrientationLandscapeLeft"
+ ],
+ "orientations_ipad": [
+  "UIInterfaceOrientationLandscapeLeft",
+  "UIInterfaceOrientationLandscapeRight"
+ ],
+ "requires_fullscreen": true,
+ "frameworks": [
+  "AdSurgeSDK.framework",
+  "AppLovinSDK.framework",
+  "BigoADS.framework",
+  "DTBiOSSDK.framework",
+  "FBAudienceNetwork.framework",
+  "FBLPromises.framework",
+  "FirebaseAnalytics.framework",
+  "FirebaseCore.framework",
+  "FirebaseCoreExtension.framework",
+  "FirebaseCoreInternal.framework",
+  "FirebaseCrashlytics.framework",
+  "FirebaseInstallations.framework",
+  "FirebaseRemoteConfigInterop.framework",
+  "FirebaseSessions.framework",
+  "GoogleAdsOnDeviceConversion.framework",
+  "GoogleAppMeasurement.framework",
+  "GoogleAppMeasurementIdentitySupport.framework",
+  "GoogleDataTransport.framework",
+  "GoogleUtilities.framework",
+  "InMobiSDK.framework",
+  "MolocoSDK.framework",
+  "OMSDK_Appodeal.framework",
+  "Promises.framework",
+  "libloader.framework",
+  "libswift_Concurrency.dylib",
+  "nanopb.framework"
+ ],
+ "plugins": [
+  "NotificationContent.appex",
+  "NotificationService.appex",
+  "PoolWidgetExtension.appex",
+  "PooliMessage.appex"
+ ],
+ "entry_count": 3505,
+ "uncompressed_bytes": 205308617,
+ "ownership_counts": {
+  "ORIGINAL_APPLICATION": 3171,
+  "SHARED": 1,
+  "UNKNOWN": 19,
+  "THIRD_PARTY": 150,
+  "CUSTOM_OVERLAY": 3
+ },
+ "extension_counts": {
+  "png": {
+   "files": 1326,
+   "bytes": 21880414
+  },
+  "plist": {
+   "files": 819,
+   "bytes": 26601718
+  },
+  "ccbi": {
+   "files": 688,
+   "bytes": 1713020
+  },
+  "mp3": {
+   "files": 142,
+   "bytes": 5009425
+  },
+  "(no-ext)": {
+   "files": 100,
+   "bytes": 140556927
+  },
+  "strings": {
+   "files": 83,
+   "bytes": 26833
+  },
+  "atlas": {
+   "files": 45,
+   "bytes": 77305
+  },
+  "json": {
+   "files": 42,
+   "bytes": 2058390
+  },
+  "skel": {
+   "files": 23,
+   "bytes": 731906
+  },
+  "nib": {
+   "files": 23,
+   "bytes": 127583
+  },
+  "xcprivacy": {
+   "files": 18,
+   "bytes": 29875
+  },
+  "js": {
+   "files": 10,
+   "bytes": 420704
+  },
+  "car": {
+   "files": 6,
+   "bytes": 4571029
+  },
+  "ttf": {
+   "files": 5,
+   "bytes": 738068
+  },
+  "html": {
+   "files": 3,
+   "bytes": 3636
+  },
+  "fsh": {
+   "files": 2,
+   "bytes": 2441
+  },
+  "wav": {
+   "files": 2,
+   "bytes": 248580
+  },
+  "keep": {
+   "files": 1,
+   "bytes": 0
+  },
+  "jpg": {
+   "files": 1,
+   "bytes": 12131
+  },
+  "obj": {
+   "files": 1,
+   "bytes": 50258
+  },
+  "dylib": {
+   "files": 1,
+   "bytes": 417072
+  },
+  "aiff": {
+   "files": 1,
+   "bytes": 1656
+  },
+  "ignore": {
+   "files": 1,
+   "bytes": 29639
+  },
+  "txt": {
+   "files": 1,
+   "bytes": 7
+  }
+ }
+}

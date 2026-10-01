@@ -1,0 +1,2530 @@
+{
+ "count": 31,
+ "mach_o": [
+  {
+   "name": "Payload/pool.app/PlugIns/NotificationContent.appex/NotificationContent",
+   "size": 99152,
+   "sha256": "3f3f052bef114dc695371ab50f795468b5d50e9b9dfc8415f64994fe5ac344cb",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_EXECUTE",
+     "flags": "0x210085",
+     "pie": true,
+     "ncmds": 30,
+     "slice_size": 99152,
+     "uuid": "6ee496a7-0ad8-32af-ac98-8f3e61c0bfb9",
+     "min_os": "13.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__PAGEZERO",
+      "__TEXT",
+      "__DATA_CONST",
+      "__DATA",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libz.1.dylib",
+      "/usr/lib/libsqlite3.dylib",
+      "/System/Library/Frameworks/UserNotifications.framework/UserNotifications",
+      "/System/Library/Frameworks/UserNotificationsUI.framework/UserNotificationsUI",
+      "/System/Library/Frameworks/CoreText.framework/CoreText",
+      "/System/Library/Frameworks/UIKit.framework/UIKit",
+      "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": null,
+     "code_signature": {
+      "present": true,
+      "size": 21584,
+      "code_directories": [
+       {
+        "identifier": "com.miniclip.8ballpoolmult.notificationContent",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 19,
+        "special_slots": 7,
+        "page_size": 4096,
+        "code_limit": 77568,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.miniclip.8ballpoolmult.notificationContent",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 19,
+        "special_slots": 7,
+        "page_size": 4096,
+        "code_limit": 77568,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": true,
+      "entitlements_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n\t<key>application-identifier</key>\n\t<string>HLSX4DMBX6.com.miniclip.8ballpoolmult.notificationContent</string>\n\t<key>com.apple.developer.team-identifier</key>\n\t<string>HLSX4DMBX6</string>\n\t<key>com.apple.security.application-groups</key>\n\t<array>\n\t\t<string>group.com.miniclip.8ballpoolmult</string>\n\t</array>\n</dict>\n</plist>",
+      "blob_count": 6,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 4096
+    }
+   ],
+   "ownership": "ORIGINAL_APPLICATION",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/PlugIns/PooliMessage.appex/PooliMessage",
+   "size": 7969584,
+   "sha256": "298dd82fee560d7b5b5f51e45cff8fc01f13622a52728d2128436918b98d9c61",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_EXECUTE",
+     "flags": "0x218085",
+     "pie": true,
+     "ncmds": 42,
+     "slice_size": 7969584,
+     "uuid": "ea23934e-48ce-37a6-bddb-d9211100c244",
+     "min_os": "13.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__PAGEZERO",
+      "__TEXT",
+      "__DATA_CONST",
+      "__DATA",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libz.1.dylib",
+      "/usr/lib/libsqlite3.dylib",
+      "/System/Library/Frameworks/WebKit.framework/WebKit",
+      "/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer",
+      "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+      "/System/Library/Frameworks/Security.framework/Security",
+      "/System/Library/Frameworks/CFNetwork.framework/CFNetwork",
+      "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+      "/System/Library/Frameworks/CoreText.framework/CoreText",
+      "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "/System/Library/Frameworks/UIKit.framework/UIKit",
+      "/System/Library/Frameworks/OpenGLES.framework/OpenGLES",
+      "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+      "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+      "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+      "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+      "/System/Library/Frameworks/OpenAL.framework/OpenAL",
+      "/System/Library/Frameworks/Messages.framework/Messages",
+      "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": null,
+     "code_signature": {
+      "present": true,
+      "size": 216432,
+      "code_directories": [
+       {
+        "identifier": "com.miniclip.8ballpoolmult.PooliMessage",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 1893,
+        "special_slots": 7,
+        "page_size": 4096,
+        "code_limit": 7753152,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.miniclip.8ballpoolmult.PooliMessage",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 1893,
+        "special_slots": 7,
+        "page_size": 4096,
+        "code_limit": 7753152,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": true,
+      "entitlements_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n\t<key>application-identifier</key>\n\t<string>HLSX4DMBX6.com.miniclip.8ballpoolmult.PooliMessage</string>\n\t<key>com.apple.developer.team-identifier</key>\n\t<string>HLSX4DMBX6</string>\n\t<key>com.apple.security.application-groups</key>\n\t<array>\n\t\t<string>group.com.miniclip.8ballpoolmult</string>\n\t</array>\n</dict>\n</plist>",
+      "blob_count": 6,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 4096
+    }
+   ],
+   "ownership": "ORIGINAL_APPLICATION",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/PlugIns/PoolWidgetExtension.appex/PoolWidgetExtension",
+   "size": 152576,
+   "sha256": "207b39899d2354e87207ded202e7b5c35dee7aa1f205d0b5d50cfca88f5daf50",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_EXECUTE",
+     "flags": "0x4210085",
+     "pie": true,
+     "ncmds": 50,
+     "slice_size": 152576,
+     "uuid": "ebe676b6-328a-35fd-afcd-58a05b5d7b4a",
+     "min_os": "14.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__PAGEZERO",
+      "__TEXT",
+      "__DATA_CONST",
+      "__DATA",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libz.1.dylib",
+      "/usr/lib/libsqlite3.dylib",
+      "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+      "/System/Library/Frameworks/WidgetKit.framework/WidgetKit",
+      "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/swift/libswiftCore.dylib",
+      "/usr/lib/swift/libswiftos.dylib",
+      "/usr/lib/swift/libswiftFoundation.dylib",
+      "/usr/lib/swift/libswiftCoreGraphics.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": null,
+     "code_signature": {
+      "present": true,
+      "size": 22880,
+      "code_directories": [
+       {
+        "identifier": "com.miniclip.8ballpoolmult.poolWidget",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 32,
+        "special_slots": 7,
+        "page_size": 4096,
+        "code_limit": 129696,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.miniclip.8ballpoolmult.poolWidget",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 32,
+        "special_slots": 7,
+        "page_size": 4096,
+        "code_limit": 129696,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": true,
+      "entitlements_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n\t<key>application-identifier</key>\n\t<string>HLSX4DMBX6.com.miniclip.8ballpoolmult.poolWidget</string>\n\t<key>com.apple.developer.team-identifier</key>\n\t<string>HLSX4DMBX6</string>\n\t<key>com.apple.security.application-groups</key>\n\t<array>\n\t\t<string>group.com.miniclip.8ballpoolmult</string>\n\t</array>\n</dict>\n</plist>",
+      "blob_count": 6,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 4096
+    }
+   ],
+   "ownership": "ORIGINAL_APPLICATION",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/PlugIns/NotificationService.appex/NotificationService",
+   "size": 99968,
+   "sha256": "9c846f3d60a3b4936c20a2eec06bad4a335f674425b89b8c310dd757589c8859",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_EXECUTE",
+     "flags": "0x210085",
+     "pie": true,
+     "ncmds": 27,
+     "slice_size": 99968,
+     "uuid": "51ca85fd-607f-3d25-b87a-7d366cfab482",
+     "min_os": "13.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__PAGEZERO",
+      "__TEXT",
+      "__DATA_CONST",
+      "__DATA",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libz.1.dylib",
+      "/usr/lib/libsqlite3.dylib",
+      "/System/Library/Frameworks/UserNotifications.framework/UserNotifications",
+      "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": null,
+     "code_signature": {
+      "present": true,
+      "size": 21680,
+      "code_directories": [
+       {
+        "identifier": "com.miniclip.8ballpoolmult.notificationService",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 20,
+        "special_slots": 7,
+        "page_size": 4096,
+        "code_limit": 78288,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.miniclip.8ballpoolmult.notificationService",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 20,
+        "special_slots": 7,
+        "page_size": 4096,
+        "code_limit": 78288,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": true,
+      "entitlements_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n\t<key>application-identifier</key>\n\t<string>HLSX4DMBX6.com.miniclip.8ballpoolmult.notificationService</string>\n\t<key>com.apple.developer.team-identifier</key>\n\t<string>HLSX4DMBX6</string>\n\t<key>com.apple.security.application-groups</key>\n\t<array>\n\t\t<string>group.com.miniclip.8ballpoolmult</string>\n\t</array>\n</dict>\n</plist>",
+      "blob_count": 6,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 4096
+    }
+   ],
+   "ownership": "ORIGINAL_APPLICATION",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/libloader.framework/libloader",
+   "size": 11493804,
+   "sha256": "b7f970a8b9faa84b9614055f7966a41975777b360a3abe57ddf5e9b6c71df250",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x910085",
+     "pie": false,
+     "ncmds": 45,
+     "slice_size": 11493804,
+     "uuid": "1a1bc909-4e7c-31a5-bd59-3ed3b7867064",
+     "min_os": "9.0.0",
+     "sdk": "26.5.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__DATA",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libobjc.A.dylib",
+      "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+      "/System/Library/Frameworks/UIKit.framework/UIKit",
+      "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+      "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+      "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+      "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+      "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+      "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices",
+      "/System/Library/Frameworks/Security.framework/Security",
+      "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+      "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+      "/System/Library/Frameworks/CFNetwork.framework/CFNetwork",
+      "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore",
+      "/System/Library/Frameworks/WebKit.framework/WebKit",
+      "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+      "/usr/lib/libz.1.dylib",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "@rpath/libswiftCore.dylib",
+      "@rpath/libswiftFoundation.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "@rpath/libloader.framework/libloader",
+     "code_signature": {
+      "present": false
+     },
+     "crypt_size": 9699328
+    }
+   ],
+   "ownership": "CUSTOM_OVERLAY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/DTBiOSSDK.framework/DTBiOSSDK",
+   "size": 1850224,
+   "sha256": "fd3de21fb2829b41170367c4f9cee149fd88e3a809ab621fee19f4b32135df81",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 32,
+     "slice_size": 1850224,
+     "uuid": "866b9c08-d8b2-30bd-bcbf-e1ec362e7a73",
+     "min_os": "12.0.0",
+     "sdk": "26.0.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__DATA",
+      "__LLVM_COV",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+      "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+      "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+      "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+      "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+      "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore",
+      "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+      "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+      "/System/Library/Frameworks/UIKit.framework/UIKit",
+      "/System/Library/Frameworks/WebKit.framework/WebKit"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "@rpath/DTBiOSSDK.framework/DTBiOSSDK",
+     "code_signature": {
+      "present": true,
+      "size": 64016,
+      "code_directories": [
+       {
+        "identifier": "com.a9.pdp.DTBiOSSDK",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 437,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 1786208,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.a9.pdp.DTBiOSSDK",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 437,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 1786208,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 688128
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/GoogleDataTransport.framework/GoogleDataTransport",
+   "size": 35584,
+   "sha256": "83b6517640b3d4bbe843117685f4f0e546a0687a3d791f074b78e95fdd6e4448",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35584,
+     "uuid": "24e94736-e40e-3bc1-8f3c-d646cf466ce6",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.QURBcthH/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19120,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.GoogleDataTransport",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.GoogleDataTransport",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/InMobiSDK.framework/InMobiSDK",
+   "size": 6621120,
+   "sha256": "4ce4d9e30d40b14bb1564ecf144b075f49d838b89c976d44aa0e2e29d8e632d2",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x4110085",
+     "pie": false,
+     "ncmds": 72,
+     "slice_size": 6621120,
+     "uuid": "8fcaad3a-d434-330b-9b4d-6773889b95f3",
+     "min_os": "12.0.0",
+     "sdk": "18.0.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__DATA",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+      "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+      "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+      "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+      "/System/Library/Frameworks/CoreImage.framework/CoreImage",
+      "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+      "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+      "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+      "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore",
+      "/System/Library/Frameworks/MessageUI.framework/MessageUI",
+      "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+      "/System/Library/Frameworks/SafariServices.framework/SafariServices",
+      "/System/Library/Frameworks/Social.framework/Social",
+      "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+      "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+      "/System/Library/Frameworks/UIKit.framework/UIKit",
+      "/System/Library/Frameworks/WebKit.framework/WebKit",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libsqlite3.dylib",
+      "@rpath/libswiftCore.dylib",
+      "@rpath/libswiftCoreFoundation.dylib",
+      "@rpath/libswiftCoreMedia.dylib",
+      "@rpath/libswiftDispatch.dylib",
+      "@rpath/libswiftObjectiveC.dylib",
+      "@rpath/libswiftFoundation.dylib",
+      "@rpath/libswiftCoreGraphics.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "@rpath/InMobiSDK.framework/InMobiSDK",
+     "code_signature": {
+      "present": true,
+      "size": 182160,
+      "code_directories": [
+       {
+        "identifier": "com.inmobi.InMobiSDK",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 1573,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 6438960,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.inmobi.InMobiSDK",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 1573,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 6438960,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 4374528
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/FirebaseCrashlytics.framework/FirebaseCrashlytics",
+   "size": 35584,
+   "sha256": "d2deaae7728678dd92b28fcc59b0ca451f22fa75a21b13b67411609a2b41423f",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35584,
+     "uuid": "fbdd9e21-84e8-3a78-9778-b283a15c75f3",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.jkp6ztcm/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19120,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.FirebaseCrashlytics",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.FirebaseCrashlytics",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/GoogleAppMeasurement.framework/GoogleAppMeasurement",
+   "size": 35584,
+   "sha256": "eccfd1440fa9b53a32c29bf8945a4df91f1df9d45eef29d98553a58b8270652f",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35584,
+     "uuid": "64c9d238-a741-33be-8d58-8d1db3e9afa5",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.lVwM918w/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19120,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.GoogleAppMeasurement",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.GoogleAppMeasurement",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/FBLPromises.framework/FBLPromises",
+   "size": 35568,
+   "sha256": "8873a298de993720b96a34d9221e02af96feec216873b4fae2817172f3369f7e",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35568,
+     "uuid": "a029ec84-21fb-3491-955b-a7c1f57b81be",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.uj2PYEOg/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19104,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.FBLPromises",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.FBLPromises",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/libswift_Concurrency.dylib",
+   "size": 417072,
+   "sha256": "2f6bf40708648689d451a34d0800ee4f03165f9ae951442e7a22fb39b0af5575",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x4118085",
+     "pie": false,
+     "ncmds": 19,
+     "slice_size": 417072,
+     "uuid": "346a0aa4-e04e-3056-8a04-0255f64f2dd3",
+     "min_os": "7.0.0",
+     "sdk": "16.1.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__DATA",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+      "@rpath/libswiftCore.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "@rpath/libswift_Concurrency.dylib",
+     "code_signature": {
+      "present": true,
+      "size": 28448,
+      "code_directories": [
+       {
+        "identifier": "com.apple.dt.runtime.swiftConcurrency",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 95,
+        "special_slots": 2,
+        "page_size": 4096,
+        "code_limit": 388624,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.apple.dt.runtime.swiftConcurrency",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 95,
+        "special_slots": 2,
+        "page_size": 4096,
+        "code_limit": 388624,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 262144
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/FirebaseCoreInternal.framework/FirebaseCoreInternal",
+   "size": 35584,
+   "sha256": "52015bbb8a682b28d96c99282737f64b5ef2a6134d8aefe445e7200c31e26959",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35584,
+     "uuid": "d6398fcf-2b91-3789-a2c8-73e4a76009f6",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.Ki95Op0n/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19120,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.FirebaseCoreInternal",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.FirebaseCoreInternal",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/FirebaseCore.framework/FirebaseCore",
+   "size": 35568,
+   "sha256": "48944edce34178908f9c60a27d64c17e7f494f5392d17fd644b09b156be1b9bf",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35568,
+     "uuid": "b8e9d93e-bd4f-3b5a-b2f8-c9f42db2c3ea",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.cLh79p8L/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19104,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.FirebaseCore",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.FirebaseCore",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/FirebaseSessions.framework/FirebaseSessions",
+   "size": 35584,
+   "sha256": "d51219ea09f254badf4947299b9ba91414db94f3b2caa254326a42d0a027eaf3",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35584,
+     "uuid": "f90b6cb0-efb6-3901-9078-065ad442ba89",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.t7oLPUC5/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19120,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.FirebaseSessions",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.FirebaseSessions",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/FirebaseAnalytics.framework/FirebaseAnalytics",
+   "size": 35584,
+   "sha256": "a50f4c59566d60dc4c954f8074464d7d43b3e90a7a462fe79908009b587f5891",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35584,
+     "uuid": "1e77c12a-6b0a-30e6-9d96-ae17c054c528",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.7YxXVUEv/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19120,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.FirebaseAnalytics",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.FirebaseAnalytics",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/GoogleUtilities.framework/GoogleUtilities",
+   "size": 35584,
+   "sha256": "3610a8e11681eedbdcf2f636d67c95d22cd4fc23c96966441386db21a3ebac36",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35584,
+     "uuid": "8f901bea-eeca-398d-bfd8-09e798bfa509",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.Wq7LRubL/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19120,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.GoogleUtilities",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.GoogleUtilities",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/OMSDK_Appodeal.framework/OMSDK_Appodeal",
+   "size": 35536,
+   "sha256": "d4238d8dab620be1a55c05bc409977eeefdb5448eb49fbffb2170200fc712003",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 14,
+     "slice_size": 35536,
+     "uuid": "35c26974-cd23-3ffc-988f-4c10288a2c49",
+     "min_os": "11.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.VFL6vdLL/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19088,
+      "code_directories": [
+       {
+        "identifier": "com.iabtechlab.omsdk",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16448,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.iabtechlab.omsdk",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16448,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/FirebaseCoreExtension.framework/FirebaseCoreExtension",
+   "size": 35600,
+   "sha256": "4de03192bddc6b195207b1d3c138c07768af0c4ee9e3a9ba1de00ec48db5dc75",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35600,
+     "uuid": "60da8952-2bc2-3aa9-a59a-f02aaf2b698c",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.XPfrGr1L/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19136,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.FirebaseCoreExtension",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.FirebaseCoreExtension",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/GoogleAdsOnDeviceConversion.framework/GoogleAdsOnDeviceConversion",
+   "size": 35600,
+   "sha256": "86289400d5433f3ada10a1943de11a0cd47e48aabbfd7c5793ad46e15814b5a8",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 14,
+     "slice_size": 35600,
+     "uuid": "003a7167-9b9d-3fe7-a001-8223ec34befc",
+     "min_os": "13.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.zZ5wSH9y/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19152,
+      "code_directories": [
+       {
+        "identifier": "com.google.ads.GoogleAdsOnDeviceConversion",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16448,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.google.ads.GoogleAdsOnDeviceConversion",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16448,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/nanopb.framework/nanopb",
+   "size": 35552,
+   "sha256": "9fb67c2908d8e96d5457308aaaa4e4f6c7b1aeebf423cf80f51ca51b28e6e922",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35552,
+     "uuid": "f2b92504-40a5-3cbc-83f2-a312ca331c8e",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.QWtMo9U2/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19088,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.nanopb",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.nanopb",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/FirebaseRemoteConfigInterop.framework/FirebaseRemoteConfigInterop",
+   "size": 35616,
+   "sha256": "b9ef3e6f11ff9493ccabca5319893e37f483d7f10e1530f564a15107a5a639fc",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35616,
+     "uuid": "9d0a877a-6f69-346b-add7-bdcd636d24ca",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.HqWZMxQD/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19152,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.FirebaseRemoteConfigInterop",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.FirebaseRemoteConfigInterop",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/Promises.framework/Promises",
+   "size": 35552,
+   "sha256": "ce429f4a86ea52d8d08932b64a62cfff3ca5c393da8074d081ba735f21380b9d",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35552,
+     "uuid": "85dd2343-ea52-3419-b887-773114f323f3",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.KKtXkGEO/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19088,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.Promises",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.Promises",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/AdSurgeSDK.framework/AdSurgeSDK",
+   "size": 4969280,
+   "sha256": "fc29aabfbb090caa649e41017abd0af9dd3c664fbc3e6e1e1fa05bd5ca83a6f6",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x110085",
+     "pie": false,
+     "ncmds": 63,
+     "slice_size": 4969280,
+     "uuid": "1167494c-83be-3ebd-8184-960c78761bd8",
+     "min_os": "12.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__DATA",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libc++abi.dylib",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+      "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore",
+      "/usr/lib/libz.1.dylib",
+      "/System/Library/Frameworks/SafariServices.framework/SafariServices",
+      "/System/Library/Frameworks/MessageUI.framework/MessageUI",
+      "/System/Library/Frameworks/WebKit.framework/WebKit",
+      "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+      "/System/Library/Frameworks/Security.framework/Security",
+      "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+      "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+      "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+      "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+      "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+      "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+      "/System/Library/Frameworks/UIKit.framework/UIKit",
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/Accelerate.framework/Accelerate",
+      "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+      "/System/Library/Frameworks/CFNetwork.framework/CFNetwork",
+      "/System/Library/Frameworks/CoreImage.framework/CoreImage",
+      "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+      "/System/Library/Frameworks/CoreMotion.framework/CoreMotion",
+      "/System/Library/Frameworks/CoreServices.framework/CoreServices",
+      "/System/Library/Frameworks/ImageIO.framework/ImageIO",
+      "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+      "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox",
+      "/usr/lib/libsqlite3.dylib",
+      "@rpath/libswiftCore.dylib",
+      "@rpath/libswiftFoundation.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "@rpath/AdSurgeSDK.framework/AdSurgeSDK",
+     "code_signature": {
+      "present": true,
+      "size": 141168,
+      "code_directories": [
+       {
+        "identifier": "com.AdSurge.ADN",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 1179,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 4828112,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.AdSurge.ADN",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 1179,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 4828112,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 2424832
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations",
+   "size": 35600,
+   "sha256": "0c91e52260e2e579053e6c8ef72daa1616fd103369b2ba58ef14aba54c24ba87",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35600,
+     "uuid": "dd2ada75-e21b-33c4-8ec9-9004aeb87943",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.TpYYYjFX/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19136,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.FirebaseInstallations",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.FirebaseInstallations",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/AppLovinSDK.framework/AppLovinSDK",
+   "size": 5719216,
+   "sha256": "ac8becb9c767ecf4387865b8615dcf2e261604e3ab9ce9424346b372349dd709",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x4110085",
+     "pie": false,
+     "ncmds": 59,
+     "slice_size": 5719216,
+     "uuid": "984e297e-30c3-379d-9fdd-0baa02d671c1",
+     "min_os": "12.0.0",
+     "sdk": "18.0.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__DATA",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+      "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+      "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+      "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+      "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+      "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "/System/Library/Frameworks/SafariServices.framework/SafariServices",
+      "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+      "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+      "/System/Library/Frameworks/UIKit.framework/UIKit",
+      "/System/Library/Frameworks/WebKit.framework/WebKit",
+      "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/CFNetwork.framework/CFNetwork",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+      "/System/Library/Frameworks/CoreServices.framework/CoreServices",
+      "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore",
+      "/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer",
+      "/System/Library/Frameworks/OpenGLES.framework/OpenGLES",
+      "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libz.1.dylib",
+      "@rpath/libswiftCore.dylib",
+      "@rpath/libswiftFoundation.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "@rpath/AppLovinSDK.framework/AppLovinSDK",
+     "code_signature": {
+      "present": true,
+      "size": 159776,
+      "code_directories": [
+       {
+        "identifier": "com.applovin.sdk",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 1358,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 5559440,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.applovin.sdk",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 1358,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 5559440,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 2654208
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/FBAudienceNetwork.framework/FBAudienceNetwork",
+   "size": 7113728,
+   "sha256": "592a5a57e857a10d5bb0a7ed4eba3edbd4be474f2f7bd18e49ddb0867b7c2e04",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x918085",
+     "pie": false,
+     "ncmds": 67,
+     "slice_size": 7113728,
+     "uuid": "4c4c4468-5555-3144-a152-93e4564ec029",
+     "min_os": "13.0.0",
+     "sdk": "26.0.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__DATA_CONST",
+      "__DATA",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libxml2.2.dylib",
+      "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+      "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+      "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+      "/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication",
+      "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+      "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+      "/System/Library/Frameworks/UIKit.framework/UIKit",
+      "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+      "/System/Library/Frameworks/Security.framework/Security",
+      "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+      "/System/Library/Frameworks/CoreVideo.framework/CoreVideo",
+      "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox",
+      "/System/Library/Frameworks/Accelerate.framework/Accelerate",
+      "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+      "/System/Library/Frameworks/WebKit.framework/WebKit",
+      "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+      "/System/Library/Frameworks/CoreMotion.framework/CoreMotion",
+      "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+      "/System/Library/Frameworks/SafariServices.framework/SafariServices",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libiconv.2.dylib",
+      "/usr/lib/libz.1.dylib",
+      "/usr/lib/libsqlite3.dylib",
+      "/usr/lib/libc++abi.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/usr/lib/swift/libswiftCore.dylib",
+      "/usr/lib/swift/libswiftObjectiveC.dylib",
+      "/usr/lib/swift/libswiftDispatch.dylib",
+      "/usr/lib/swift/libswiftCoreMedia.dylib",
+      "/usr/lib/swift/libswiftFoundation.dylib",
+      "/usr/lib/swift/libswiftUIKit.dylib",
+      "/usr/lib/swift/libswiftCoreGraphics.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "@rpath/FBAudienceNetwork.framework/FBAudienceNetwork",
+     "code_signature": {
+      "present": true,
+      "size": 194352,
+      "code_directories": [
+       {
+        "identifier": "com.facebook.FBAudienceNetwork",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 1690,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 6919376,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.facebook.FBAudienceNetwork",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 1690,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 6919376,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 2801664
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/GoogleAppMeasurementIdentitySupport.framework/GoogleAppMeasurementIdentitySupport",
+   "size": 35632,
+   "sha256": "d56f5cad828fd5c60f6392573b4aaab2620b8b2ba473a8eb6874d0456633fd86",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 15,
+     "slice_size": 35632,
+     "uuid": "f069ae56-752a-31aa-b195-2b1911d956ad",
+     "min_os": "100.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.415mUqKQ/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19168,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.GoogleAppMeasurementIdentitySupport",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.GoogleAppMeasurementIdentitySupport",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16464,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/BigoADS.framework/BigoADS",
+   "size": 35536,
+   "sha256": "32073f17fa3d9bd7aa63b7d9955d26a7abdc74613ada57fa719d390a73bc43ce",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x100085",
+     "pie": false,
+     "ncmds": 14,
+     "slice_size": 35536,
+     "uuid": "48ad4c8c-a20b-358f-8aad-cfc1f1b39a63",
+     "min_os": "12.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libSystem.B.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "/private/var/folders/56/s6wrq2pn47l52k5fkxz3v4vc0000gn/T/swbuild.tmp.gJApnATh/Data.noindex/arm64-apple",
+     "code_signature": {
+      "present": true,
+      "size": 19088,
+      "code_directories": [
+       {
+        "identifier": "org.cocoapods.BigoADS",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16448,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "org.cocoapods.BigoADS",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 5,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 16448,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 0
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/Frameworks/MolocoSDK.framework/MolocoSDK",
+   "size": 5301840,
+   "sha256": "a59c5048a2c410dbcf5acc0441d892a2957bda9efac84ef92351b7969ed45f50",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_DYLIB",
+     "flags": "0x4110085",
+     "pie": false,
+     "ncmds": 66,
+     "slice_size": 5301840,
+     "uuid": "cd46d20d-16f9-38b1-afb8-60a061940067",
+     "min_os": "12.0.0",
+     "sdk": "18.5.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__TEXT",
+      "__DATA",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+      "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+      "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+      "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+      "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+      "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+      "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+      "/System/Library/Frameworks/SafariServices.framework/SafariServices",
+      "/System/Library/Frameworks/Security.framework/Security",
+      "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+      "/System/Library/Frameworks/UIKit.framework/UIKit",
+      "/System/Library/Frameworks/WebKit.framework/WebKit",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libz.1.dylib",
+      "@rpath/libswiftCore.dylib",
+      "@rpath/libswiftCoreMedia.dylib",
+      "@rpath/libswiftDarwin.dylib",
+      "@rpath/libswiftDispatch.dylib",
+      "@rpath/libswiftObjectiveC.dylib",
+      "@rpath/libswiftos.dylib",
+      "@rpath/libswiftFoundation.dylib",
+      "@rpath/libswiftCoreGraphics.dylib",
+      "@rpath/libswiftNetwork.dylib"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": "@rpath/MolocoSDK.framework/MolocoSDK",
+     "code_signature": {
+      "present": true,
+      "size": 149408,
+      "code_directories": [
+       {
+        "identifier": "com.moloco.ads.sdk.core",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 1258,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 5152432,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.moloco.ads.sdk.core",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 1258,
+        "special_slots": 3,
+        "page_size": 4096,
+        "code_limit": 5152432,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": false,
+      "entitlements_xml": null,
+      "blob_count": 4,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 3964928
+    }
+   ],
+   "ownership": "THIRD_PARTY",
+   "confidence": "HIGH"
+  },
+  {
+   "name": "Payload/pool.app/pool",
+   "size": 81963248,
+   "sha256": "ebf863aec2cd42b7b5794553580ff67e9f0df9a545688a095c3c452df1c4d21c",
+   "fat": false,
+   "slices": [
+    {
+     "arch": "arm64",
+     "subtype": "all",
+     "filetype": "MH_EXECUTE",
+     "flags": "0xa18085",
+     "pie": true,
+     "ncmds": 125,
+     "slice_size": 81963248,
+     "uuid": "2e878feb-d43a-3457-ae60-fecb87878902",
+     "min_os": "13.0.0",
+     "sdk": "26.2.0",
+     "platform": "iOS",
+     "cryptid": 0,
+     "segments": [
+      "__PAGEZERO",
+      "__TEXT",
+      "__DATA_CONST",
+      "__DATA",
+      "__LLVM_COV",
+      "__LINKEDIT"
+     ],
+     "dylibs": [
+      "/usr/lib/libz.1.dylib",
+      "/usr/lib/libresolv.9.dylib",
+      "/usr/lib/libc++abi.dylib",
+      "/usr/lib/libbz2.1.0.dylib",
+      "/usr/lib/libsqlite3.dylib",
+      "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics",
+      "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+      "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck",
+      "/System/Library/Frameworks/Accelerate.framework/Accelerate",
+      "/System/Library/Frameworks/UserNotifications.framework/UserNotifications",
+      "/System/Library/Frameworks/GLKit.framework/GLKit",
+      "/usr/lib/libxml2.2.dylib",
+      "/System/Library/Frameworks/ImageIO.framework/ImageIO",
+      "/System/Library/Frameworks/CoreVideo.framework/CoreVideo",
+      "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices",
+      "/System/Library/Frameworks/CoreData.framework/CoreData",
+      "/System/Library/Frameworks/CoreMotion.framework/CoreMotion",
+      "/System/Library/Frameworks/Security.framework/Security",
+      "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+      "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+      "/System/Library/Frameworks/OpenAL.framework/OpenAL",
+      "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+      "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+      "/System/Library/Frameworks/OpenGLES.framework/OpenGLES",
+      "/System/Library/Frameworks/iAd.framework/iAd",
+      "/System/Library/Frameworks/CFNetwork.framework/CFNetwork",
+      "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+      "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+      "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+      "/System/Library/Frameworks/EventKit.framework/EventKit",
+      "/System/Library/Frameworks/EventKitUI.framework/EventKitUI",
+      "/System/Library/Frameworks/GameKit.framework/GameKit",
+      "/System/Library/Frameworks/MessageUI.framework/MessageUI",
+      "/System/Library/Frameworks/Social.framework/Social",
+      "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+      "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+      "@rpath/AdSurgeSDK.framework/AdSurgeSDK",
+      "@rpath/AppLovinSDK.framework/AppLovinSDK",
+      "@rpath/InMobiSDK.framework/InMobiSDK",
+      "@rpath/FBAudienceNetwork.framework/FBAudienceNetwork",
+      "@rpath/DTBiOSSDK.framework/DTBiOSSDK",
+      "@rpath/MolocoSDK.framework/MolocoSDK",
+      "/usr/lib/libobjc.A.dylib",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/AVKit.framework/AVKit",
+      "/System/Library/Frameworks/CoreImage.framework/CoreImage",
+      "/System/Library/Frameworks/CoreServices.framework/CoreServices",
+      "/System/Library/Frameworks/CoreText.framework/CoreText",
+      "/System/Library/Frameworks/CryptoKit.framework/CryptoKit",
+      "/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer",
+      "/System/Library/Frameworks/Metal.framework/Metal",
+      "/System/Library/Frameworks/MetalKit.framework/MetalKit",
+      "/System/Library/Frameworks/Network.framework/Network",
+      "/System/Library/Frameworks/Photos.framework/Photos",
+      "/System/Library/Frameworks/SafariServices.framework/SafariServices",
+      "/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers",
+      "/usr/lib/libcompression.dylib",
+      "/usr/lib/swift/libswiftCore.dylib",
+      "/usr/lib/swift/libswiftCoreFoundation.dylib",
+      "/usr/lib/swift/libswiftCoreMedia.dylib",
+      "/usr/lib/swift/libswiftDispatch.dylib",
+      "/usr/lib/swift/libswiftObjectiveC.dylib",
+      "/usr/lib/swift/libswiftos.dylib",
+      "/usr/lib/swift/libswiftCoreGraphics.dylib",
+      "/usr/lib/swift/libswiftFoundation.dylib",
+      "/usr/lib/swift/libswiftUIKit.dylib",
+      "/usr/lib/swift/libswiftNetwork.dylib",
+      "@executable_path/Frameworks/libloader.framework/libloader"
+     ],
+     "weak_dylibs": [],
+     "rpaths": [],
+     "install_name": null,
+     "code_signature": {
+      "present": true,
+      "size": 2091936,
+      "code_directories": [
+       {
+        "identifier": "com.miniclip.8ballpoolmult",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha1",
+        "code_slots": 19920,
+        "special_slots": 7,
+        "page_size": 4096,
+        "code_limit": 81590080,
+        "platform_binary": 0
+       },
+       {
+        "identifier": "com.miniclip.8ballpoolmult",
+        "team_id": "HLSX4DMBX6",
+        "cd_version": "0x20500",
+        "flags": "0x10000",
+        "ad_hoc": false,
+        "hash_type": "sha256",
+        "code_slots": 19920,
+        "special_slots": 7,
+        "page_size": 4096,
+        "code_limit": 81590080,
+        "platform_binary": 0
+       }
+      ],
+      "has_cms_blob": true,
+      "has_entitlements": true,
+      "entitlements_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n\t<key>com.apple.developer.declared-age-range</key>\n\t<true/>\n\t<key>com.apple.developer.team-identifier</key>\n\t<string>HLSX4DMBX6</string>\n\t<key>application-identifier</key>\n\t<string>HLSX4DMBX6.com.miniclip.8ballpoolmult</string>\n\t<key>com.apple.developer.applesignin</key>\n\t<array>\n\t\t<string>Default</string>\n\t</array>\n\t<key>aps-environment</key>\n\t<string>production</string>\n\t<key>com.apple.developer.game-center</key>\n\t<true/>\n\t<key>com.apple.developer.associated-domains</key>\n\t<array>\n\t\t<string>applinks:8bp.co</string>\n\t\t<string>applinks:poolbyminiclip.com</string>\n\t\t<string>applinks:miniclip8ballpool.onelink.me</string>\n\t</array>\n\t<key>com.apple.security.application-groups</key>\n\t<array>\n\t\t<string>group.com.miniclip.8ballpoolmult</string>\n\t</array>\n</dict>\n</plist>",
+      "blob_count": 6,
+      "cms_blob_size": 4384
+     },
+     "crypt_size": 4096
+    }
+   ],
+   "ownership": "ORIGINAL_APPLICATION",
+   "confidence": "MEDIUM"
+  }
+ ]
+}

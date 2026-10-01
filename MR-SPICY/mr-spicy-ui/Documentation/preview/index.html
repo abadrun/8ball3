@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MR. SPICY — Design System Preview (v1.0.0)</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  :root {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, "Noto Sans Arabic", sans-serif;
+  }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--c-background);
+    color: var(--c-textPrimary);
+    transition: background .2s ease, color .2s ease;
+    min-height: 100vh;
+  }
+  .shell { max-width: 1180px; margin: 0 auto; padding: 24px 20px 80px; }
+
+  /* ---- toolbar ---- */
+  .toolbar {
+    position: sticky; top: 0; z-index: 30;
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    padding: 12px 20px; margin: 0 -20px 24px;
+    background: color-mix(in srgb, var(--c-surfaceElevated) 88%, transparent);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--c-separator);
+  }
+  .toolbar h1 { font-size: 15px; margin: 0 auto 0 0; letter-spacing: .14em; font-weight: 700; }
+  .toolbar h1 small { display:block; letter-spacing:0; font-weight:400; font-size:11px; color: var(--c-textTertiary); }
+  .seg { display: inline-flex; background: var(--c-controlFill); border: 1px solid var(--c-border);
+         border-radius: 10px; padding: 2px; }
+  .seg button {
+    appearance: none; border: 0; background: transparent; color: var(--c-textSecondary);
+    font: inherit; font-size: 13px; padding: 7px 14px; border-radius: 8px; cursor: pointer;
+    min-height: 34px;
+  }
+  .seg button[aria-pressed="true"] { background: var(--c-primary); color: #fff; }
+
+  /* ---- layout ---- */
+  h2.section { font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
+               color: var(--c-textTertiary); margin: 36px 0 12px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .card {
+    background: var(--c-surface); border: 1px solid var(--c-border);
+    border-radius: var(--r-l); padding: 16px;
+  }
+  .card.elevated { background: var(--c-surfaceElevated); box-shadow: 0 8px 18px rgba(0,0,0,.24); }
+
+  /* ---- tokens ---- */
+  .swatches { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .swatch { border: 1px solid var(--c-border); border-radius: var(--r-s); overflow: hidden; }
+  .swatch .chip { height: 46px; }
+  .swatch .meta { padding: 7px 9px; font-size: 11px; line-height: 1.45; }
+  .swatch .meta b { display: block; font-weight: 600; font-size: 11.5px; }
+  .swatch .meta span { color: var(--c-textTertiary); font-variant-numeric: tabular-nums; }
+  .scale-row { display:flex; flex-wrap:wrap; gap:8px; }
+  .scale-chip { font-size: 11px; padding: 6px 10px; border-radius: 999px;
+                background: var(--c-controlFill); border:1px solid var(--c-border);
+                color: var(--c-textSecondary); font-variant-numeric: tabular-nums; }
+
+  /* ---- device ---- */
+  .devices { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; }
+  .device { }
+  .device > figcaption { font-size: 11px; color: var(--c-textTertiary); margin-bottom: 8px; }
+  .screen {
+    position: relative; background: #000; border-radius: 42px; padding: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.45); border: 1px solid #2a2a2e;
+  }
+  .screen .viewport {
+    position: relative; overflow: hidden; border-radius: 34px;
+    background: var(--c-background);
+    display: flex; flex-direction: column;
+  }
+  .notch { position:absolute; top:10px; left:50%; transform:translateX(-50%);
+           width:104px; height:26px; background:#000; border-radius:999px; z-index:5; }
+  .safe-top { height: 42px; flex: none; }
+  .safe-bottom { height: 22px; flex: none; }
+  .home-indicator { width: 112px; height: 4px; border-radius: 999px;
+                    background: var(--c-textTertiary); margin: 6px auto 0; opacity:.7; }
+
+  /* ---- panel ---- */
+  .panel {
+    margin: 0 10px; background: var(--c-surfaceElevated);
+    border: 1px solid var(--c-border); border-radius: var(--r-xl);
+    box-shadow: 0 18px 40px rgba(0,0,0,.42); overflow: hidden;
+    display: flex; flex-direction: column; min-height: 0;
+  }
+  .panel-header {
+    display: flex; align-items: center; gap: 12px; padding: 10px 12px 10px 16px;
+    border-bottom: 1px solid var(--c-separator);
+  }
+  .panel-header img { width: 28px; height: 28px; border-radius: 6px; flex: none; }
+  .panel-title { min-width: 0; flex: 1; }
+  .panel-title b { display: block; font-size: 15px; letter-spacing: .08em; }
+  .panel-title span { display:block; font-size: 11px; color: var(--c-textSecondary); }
+  .icon-btn {
+    width: 36px; height: 36px; flex: none; border-radius: var(--r-s);
+    background: var(--c-controlFill); border: 1px solid var(--c-border);
+    color: var(--c-textSecondary); display: grid; place-items: center; cursor: pointer;
+    font-size: 15px; line-height: 1;
+  }
+  .panel-body { padding: 16px; overflow: auto; display: grid; gap: 16px; }
+
+  /* ---- tiles ---- */
+  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .tile { background: none; border: 0; padding: 0; cursor: pointer; display: grid;
+          justify-items: center; gap: 8px; color: inherit; font: inherit; }
+  .tile .circle {
+    width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--c-controlFill); border: 1px solid var(--c-border);
+    font-size: 21px; transition: transform .12s ease;
+  }
+  .tile:active .circle { transform: scale(.94); }
+  .tile .label { font-size: 11px; color: var(--c-textSecondary); text-align: center; line-height:1.3; }
+  .tile[data-state="selected"] .circle { background: var(--c-primaryWash); border-color: var(--c-primary); }
+  .tile[data-state="selected"] .label { color: var(--c-primaryTint); }
+  .tile[data-state="disabled"] { opacity: .45; cursor: not-allowed; }
+
+  /* ---- rows ---- */
+  .group { background: var(--c-surface); border: 1px solid var(--c-border);
+           border-radius: var(--r-l); overflow: hidden; }
+  .row { display: flex; align-items: center; gap: 12px; padding: 12px 16px; min-height: 44px; }
+  .row + .row { border-top: 1px solid var(--c-separator); }
+  .row .ico { width: 22px; text-align: center; color: var(--c-textSecondary); flex:none; }
+  .row .txt { flex: 1; min-width: 0; }
+  .row .txt b { display: block; font-size: 15px; font-weight: 400; }
+  .row .txt span { display: block; font-size: 12px; color: var(--c-textTertiary); }
+  .row .val { font-size: 14px; color: var(--c-textSecondary); }
+  .row .chev { color: var(--c-textTertiary); font-size: 13px; }
+  [dir="rtl"] .chev { transform: scaleX(-1); }
+  .switch { width: 51px; height: 31px; border-radius: 999px; background: var(--c-controlFill);
+            border: 1px solid var(--c-border); position: relative; flex: none; cursor: pointer; }
+  .switch::after { content:""; position:absolute; inset-inline-start:2px; top:2px; width:25px; height:25px;
+                   border-radius:50%; background:#fff; transition: inset-inline-start .18s ease; }
+  .switch[aria-checked="true"] { background: var(--c-primary); border-color: var(--c-primary); }
+  .switch[aria-checked="true"]::after { inset-inline-start: 22px; }
+
+  /* ---- buttons / badges ---- */
+  .btn { font: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 0 18px;
+         border-radius: var(--r-m); cursor: pointer; border: 1px solid transparent; width: 100%; }
+  .btn.primary { background: var(--c-primary); color: #fff; }
+  .btn.secondary { background: var(--c-controlFill); color: var(--c-textPrimary); border-color: var(--c-border); }
+  .btn.ghost { background: transparent; color: var(--c-primaryTint); }
+  .btn.destructive { background: color-mix(in srgb, var(--c-danger) 16%, transparent);
+                     color: var(--c-danger); border-color: color-mix(in srgb, var(--c-danger) 50%, transparent); }
+  .btn[disabled] { opacity: .45; cursor: not-allowed; }
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600;
+           padding: 3px 10px; border-radius: 999px; }
+  .badge i { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+  /* ---- modal ---- */
+  .modal-scrim { position: absolute; inset: 0; background: rgba(0,0,0,.55);
+                 display: grid; place-items: center; padding: 16px; z-index: 10; }
+  .modal { width: 100%; max-width: 320px; background: var(--c-surfaceElevated);
+           border: 1px solid var(--c-border); border-radius: var(--r-xl); padding: 22px;
+           box-shadow: 0 22px 48px rgba(0,0,0,.5); display: grid; gap: 12px; text-align: start; }
+  .modal .mico { font-size: 26px; color: var(--c-primaryTint); }
+  .modal h3 { margin: 0; font-size: 19px; }
+  .modal p { margin: 0; font-size: 14px; color: var(--c-textSecondary); line-height: 1.45; }
+  .hidden { display: none !important; }
+  .note { font-size: 12px; color: var(--c-textTertiary); line-height: 1.6; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px;
+         background: var(--c-controlFill); padding: 1px 5px; border-radius: 4px; }
+  table.matrix { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  table.matrix th, table.matrix td { text-align: start; padding: 7px 9px; border-bottom: 1px solid var(--c-separator); }
+  table.matrix th { color: var(--c-textTertiary); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <div class="toolbar">
+    <h1>MR. SPICY<small>UI layer v1.0.0 — design system preview</small></h1>
+    <div class="seg" role="group" aria-label="Language">
+      <button id="lang-en" aria-pressed="true">English</button>
+      <button id="lang-ar" aria-pressed="false">العربية</button>
+    </div>
+    <div class="seg" role="group" aria-label="Appearance">
+      <button id="mode-dark" aria-pressed="true">Dark</button>
+      <button id="mode-light" aria-pressed="false">Light</button>
+    </div>
+    <div class="seg" role="group" aria-label="Text size">
+      <button id="type-std" aria-pressed="true">Aa</button>
+      <button id="type-lg" aria-pressed="false">Aa+</button>
+    </div>
+  </div>
+
+  <p class="note" id="intro">
+    Rendered from <code>tokens.json</code> and <code>strings.json</code>, which are exported directly
+    from <code>SpicyTheme.swift</code> and the <code>.strings</code> tables by
+    <code>validation/tools/export_tokens.py</code> — so this page cannot drift from the Swift source.
+    This is design documentation for review in a browser; the shipping implementation is UIKit.
+  </p>
+
+  <h2 class="section">Components — iPhone (portrait) and small-device safe areas</h2>
+  <div class="devices">
+    <figure class="device" style="margin:0">
+      <figcaption>iPhone 15 Pro · 393×852 pt · overlay expanded</figcaption>
+      <div class="screen" style="width:313px">
+        <div class="notch"></div>
+        <div class="viewport" style="height:600px">
+          <div class="safe-top"></div>
+          <div class="panel" style="flex:1 1 auto">
+            <div class="panel-header">
+              <img src="logo.png" alt="">
+              <div class="panel-title">
+                <b data-k="spicy.header.title"></b>
+                <span data-k="spicy.header.subtitle"></span>
+              </div>
+              <span class="badge" style="background:color-mix(in srgb, var(--c-success) 16%, transparent); color:var(--c-success)">
+                <i></i><span data-k="spicy.state.success"></span>
+              </span>
+              <button class="icon-btn" data-a="spicy.header.settings">⚙</button>
+              <button class="icon-btn" data-a="spicy.header.minimise">—</button>
+              <button class="icon-btn" data-a="spicy.header.close">✕</button>
+            </div>
+            <div class="panel-body">
+              <div class="tiles">
+                <button class="tile" data-state="selected">
+                  <span class="circle">⚙</span><span class="label" data-k="spicy.settings.title"></span>
+                </button>
+                <button class="tile">
+                  <span class="circle">🌐</span><span class="label" data-k="spicy.settings.language"></span>
+                </button>
+                <button class="tile">
+                  <span class="circle">?</span><span class="label" data-k="spicy.settings.help"></span>
+                </button>
+                <button class="tile" data-state="disabled">
+                  <span class="circle">ⓘ</span><span class="label" data-k="spicy.about.title"></span>
+                </button>
+              </div>
+              <div class="group">
+                <div class="row">
+                  <span class="ico">🌐</span>
+                  <span class="txt"><b data-k="spicy.settings.language"></b><span data-k="spicy.settings.language.hint"></span></span>
+                  <span class="val" id="lang-value"></span><span class="chev">›</span>
+                </div>
+                <div class="row">
+                  <span class="ico">◐</span>
+                  <span class="txt"><b data-k="spicy.settings.appearance"></b></span>
+                  <span class="val" data-k="spicy.settings.appearance.dark"></span><span class="chev">›</span>
+                </div>
+                <div class="row">
+                  <span class="ico">⇄</span>
+                  <span class="txt"><b data-k="spicy.settings.reduce_motion"></b><span data-k="spicy.settings.reduce_motion.hint"></span></span>
+                  <span class="switch" role="switch" aria-checked="false" tabindex="0"></span>
+                </div>
+                <div class="row">
+                  <span class="ico">#</span>
+                  <span class="txt"><b data-k="spicy.settings.version"></b></span>
+                  <span class="val">1.0.0</span>
+                </div>
+              </div>
+              <button class="btn primary" data-k="spicy.action.done"></button>
+              <button class="btn secondary" data-k="spicy.action.cancel"></button>
+            </div>
+          </div>
+          <div class="safe-bottom"><div class="home-indicator"></div></div>
+        </div>
+      </div>
+    </figure>
+
+    <figure class="device" style="margin:0">
+      <figcaption>Modal system · one implementation for every dialog</figcaption>
+      <div class="screen" style="width:313px">
+        <div class="notch"></div>
+        <div class="viewport" style="height:600px">
+          <div class="safe-top"></div>
+          <div class="panel" style="flex:1 1 auto; opacity:.5">
+            <div class="panel-header">
+              <img src="logo.png" alt="">
+              <div class="panel-title"><b data-k="spicy.header.title"></b></div>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+          <div class="safe-bottom"><div class="home-indicator"></div></div>
+          <div class="modal-scrim">
+            <div class="modal" role="dialog" aria-modal="true">
+              <div class="mico">🌐</div>
+              <h3 data-k="spicy.language.title"></h3>
+              <p data-k="spicy.settings.language.hint"></p>
+              <button class="btn primary" data-k="spicy.language.english"></button>
+              <button class="btn secondary" data-k="spicy.language.arabic"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </figure>
+
+    <figure class="device" style="margin:0">
+      <figcaption>iPhone SE · 320 pt class · minimised + large text safety</figcaption>
+      <div class="screen" style="width:270px; border-radius:30px">
+        <div class="viewport" style="height:480px; border-radius:22px">
+          <div class="safe-top" style="height:24px"></div>
+          <div class="panel" style="flex:0 0 auto">
+            <div class="panel-header">
+              <img src="logo.png" alt="">
+              <div class="panel-title"><b data-k="spicy.header.title"></b></div>
+              <button class="icon-btn" data-a="spicy.header.expand">+</button>
+              <button class="icon-btn" data-a="spicy.header.close">✕</button>
+            </div>
+          </div>
+          <div style="flex:1"></div>
+          <div class="safe-bottom" style="height:12px"></div>
+        </div>
+      </div>
+    </figure>
+  </div>
+
+  <h2 class="section">Status badges &amp; buttons</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="badges" id="badges"></div>
+    </div>
+    <div class="card" style="display:grid; gap:8px">
+      <button class="btn primary" data-k="spicy.action.ok"></button>
+      <button class="btn secondary" data-k="spicy.action.cancel"></button>
+      <button class="btn ghost" data-k="spicy.action.learn_more"></button>
+      <button class="btn destructive" data-k="spicy.settings.reset.confirm"></button>
+      <button class="btn primary" disabled data-k="spicy.state.disabled"></button>
+    </div>
+  </div>
+
+  <h2 class="section">Colour tokens</h2>
+  <div class="card"><div class="swatches" id="swatches"></div></div>
+
+  <h2 class="section">Scales</h2>
+  <div class="grid" id="scales"></div>
+
+  <h2 class="section">Localisation coverage</h2>
+  <div class="card">
+    <table class="matrix" id="l10n-table">
+      <thead><tr><th>Key</th><th>English</th><th>العربية</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+let TOKENS = null, STRINGS = null;
+let lang = "en", mode = "dark";
+
+async function boot() {
+  [TOKENS, STRINGS] = await Promise.all([
+    fetch("tokens.json").then(r => r.json()),
+    fetch("strings.json").then(r => r.json())
+  ]);
+  applyTokens();
+  renderSwatches();
+  renderScales();
+  renderBadges();
+  renderTable();
+  applyLanguage();
+  wire();
+}
+
+function applyTokens() {
+  const root = document.documentElement.style;
+  for (const [name, value] of Object.entries(TOKENS.colors)) {
+    root.setProperty(`--c-${name}`, value[mode]);
+  }
+  for (const [name, value] of Object.entries(TOKENS.scales.Radius)) {
+    root.setProperty(`--r-${name}`, value + "px");
+  }
+  for (const [name, value] of Object.entries(TOKENS.scales.Spacing)) {
+    root.setProperty(`--s-${name}`, value + "px");
+  }
+}
+
+function t(key) {
+  const table = STRINGS[lang] || {};
+  return table[key] !== undefined ? table[key] : (STRINGS.en[key] || "⟦" + key + "⟧");
+}
+
+function applyLanguage() {
+  const rtl = lang === "ar";
+  document.documentElement.lang = lang;
+  document.documentElement.dir = rtl ? "rtl" : "ltr";
+  document.querySelectorAll("[data-k]").forEach(el => { el.textContent = t(el.dataset.k); });
+  document.querySelectorAll("[data-a]").forEach(el => { el.setAttribute("aria-label", t(el.dataset.a)); });
+  const value = document.getElementById("lang-value");
+  if (value) value.textContent = rtl ? t("spicy.language.arabic") : t("spicy.language.english");
+}
+
+function renderSwatches() {
+  const host = document.getElementById("swatches");
+  host.innerHTML = "";
+  for (const [name, value] of Object.entries(TOKENS.colors)) {
+    const el = document.createElement("div");
+    el.className = "swatch";
+    el.innerHTML = `<div class="chip" style="background:${value[mode]}"></div>
+      <div class="meta"><b>${name}</b><span>${value[mode]}</span></div>`;
+    host.appendChild(el);
+  }
+}
+
+function renderScales() {
+  const host = document.getElementById("scales");
+  host.innerHTML = "";
+  for (const [group, values] of Object.entries(TOKENS.scales)) {
+    const card = document.createElement("div");
+    card.className = "card";
+    const chips = Object.entries(values)
+      .map(([k, v]) => `<span class="scale-chip">${k} · ${v}</span>`).join("");
+    card.innerHTML = `<h3 style="margin:0 0 10px; font-size:13px">${group}</h3>
+                      <div class="scale-row">${chips}</div>`;
+    host.appendChild(card);
+  }
+}
+
+function renderBadges() {
+  const host = document.getElementById("badges");
+  const kinds = [
+    ["neutral", "textSecondary", "spicy.state.disabled"],
+    ["success", "success", "spicy.state.success"],
+    ["warning", "warning", "spicy.state.loading"],
+    ["danger", "danger", "spicy.state.error"],
+    ["info", "info", "spicy.state.unavailable"]
+  ];
+  host.innerHTML = kinds.map(([, token, key]) =>
+    `<span class="badge" style="color:var(--c-${token});
+       background:color-mix(in srgb, var(--c-${token}) 16%, transparent)">
+       <i></i><span data-k="${key}"></span></span>`).join("");
+}
+
+function renderTable() {
+  const body = document.querySelector("#l10n-table tbody");
+  body.innerHTML = Object.keys(STRINGS.en).map(key =>
+    `<tr><td><code>${key}</code></td><td>${escapeHTML(STRINGS.en[key])}</td>
+     <td dir="rtl">${escapeHTML(STRINGS.ar[key] || "")}</td></tr>`).join("");
+}
+
+function escapeHTML(value) {
+  return value.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+}
+
+function wire() {
+  const set = (a, b, on) => {
+    document.getElementById(a).setAttribute("aria-pressed", String(on));
+    document.getElementById(b).setAttribute("aria-pressed", String(!on));
+  };
+  document.getElementById("lang-en").onclick = () => {
+    lang = "en"; set("lang-en", "lang-ar", true); applyLanguage(); renderBadges(); applyLanguage();
+  };
+  document.getElementById("lang-ar").onclick = () => {
+    lang = "ar"; set("lang-ar", "lang-en", true); applyLanguage(); renderBadges(); applyLanguage();
+  };
+  document.getElementById("mode-dark").onclick = () => {
+    mode = "dark"; set("mode-dark", "mode-light", true); applyTokens(); renderSwatches();
+  };
+  document.getElementById("mode-light").onclick = () => {
+    mode = "light"; set("mode-light", "mode-dark", true); applyTokens(); renderSwatches();
+  };
+  document.getElementById("type-std").onclick = () => {
+    document.documentElement.style.fontSize = "16px";
+    set("type-std", "type-lg", true);
+  };
+  document.getElementById("type-lg").onclick = () => {
+    document.documentElement.style.fontSize = "21px";
+    set("type-lg", "type-std", true);
+  };
+  document.querySelectorAll(".switch").forEach(el => {
+    el.onclick = () => el.setAttribute("aria-checked",
+      el.getAttribute("aria-checked") === "true" ? "false" : "true");
+  });
+}
+
+boot();
+</script>
+</body>
+</html>

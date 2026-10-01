@@ -1,0 +1,175 @@
+{
+ "NotificationContent.appex": {
+  "CFBundleName": "NotificationContent",
+  "DTSDKName": "iphoneos26.2",
+  "DTXcode": "2620",
+  "DTSDKBuild": "23C53",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "5328",
+  "BuildMachineOSBuild": "25F71",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "XPC!",
+  "CFBundleShortVersionString": "56.30.0",
+  "CFBundleSupportedPlatforms": [
+   "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "NotificationContent",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "UIRequiredDeviceCapabilities": [
+   "arm64"
+  ],
+  "MinimumOSVersion": "13.0",
+  "CFBundleIdentifier": "com.miniclip.8ballpoolmult.notificationContent",
+  "UIAppFonts": [
+   "AdoraFresh.ttf"
+  ],
+  "DTPlatformVersion": "26.2",
+  "DTXcodeBuild": "17C52",
+  "CFBundleDisplayName": "NotificationContent",
+  "UIDeviceFamily": [
+   1,
+   2
+  ],
+  "DTXcodeBuildDistribution": "14C18",
+  "DTPlatformBuild": "23C53",
+  "NSExtension": {
+   "NSExtensionAttributes": {
+    "UNNotificationExtensionDefaultContentHidden": false,
+    "UNNotificationExtensionInitialContentSizeRatio": 0.5,
+    "UNNotificationExtensionCategory": [
+     "channel_friends_update",
+     "channel_friends_online",
+     "channel_competitors"
+    ]
+   },
+   "NSExtensionPointIdentifier": "com.apple.usernotifications.content-extension",
+   "NSExtensionMainStoryboard": "MainInterface"
+  }
+ },
+ "NotificationService.appex": {
+  "CFBundleName": "NotificationService",
+  "DTSDKName": "iphoneos26.2",
+  "DTXcode": "2620",
+  "DTSDKBuild": "23C53",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "5328",
+  "BuildMachineOSBuild": "25F71",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "XPC!",
+  "CFBundleShortVersionString": "56.30.0",
+  "CFBundleSupportedPlatforms": [
+   "iPhoneOS"
+  ],
+  "NSAppTransportSecurity": {
+   "NSAllowsArbitraryLoads": true
+  },
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "NotificationService",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "UIRequiredDeviceCapabilities": [
+   "arm64"
+  ],
+  "MinimumOSVersion": "13.0",
+  "CFBundleIdentifier": "com.miniclip.8ballpoolmult.notificationService",
+  "UIDeviceFamily": [
+   1,
+   2
+  ],
+  "DTPlatformVersion": "26.2",
+  "DTXcodeBuild": "17C52",
+  "CFBundleDisplayName": "NotificationService",
+  "DTXcodeBuildDistribution": "14C18",
+  "DTPlatformBuild": "23C53",
+  "NSExtension": {
+   "NSExtensionPointIdentifier": "com.apple.usernotifications.service",
+   "NSExtensionPrincipalClass": "NotificationService"
+  }
+ },
+ "PoolWidgetExtension.appex": {
+  "CFBundleName": "PoolWidgetExtension",
+  "DTSDKName": "iphoneos26.2",
+  "DTXcode": "2620",
+  "DTSDKBuild": "23C53",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "5328",
+  "BuildMachineOSBuild": "25F71",
+  "DTPlatformName": "iphoneos",
+  "CFBundleShortVersionString": "56.30.0",
+  "CFBundleSupportedPlatforms": [
+   "iPhoneOS"
+  ],
+  "CFBundleExecutable": "PoolWidgetExtension",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "UIRequiredDeviceCapabilities": [
+   "arm64"
+  ],
+  "MinimumOSVersion": "14.0",
+  "CFBundleIdentifier": "com.miniclip.8ballpoolmult.poolWidget",
+  "UIDeviceFamily": [
+   1,
+   2
+  ],
+  "DTPlatformVersion": "26.2",
+  "DTXcodeBuild": "17C52",
+  "CFBundleDisplayName": "PoolWidget",
+  "DTXcodeBuildDistribution": "14C18",
+  "DTPlatformBuild": "23C53",
+  "NSExtension": {
+   "NSExtensionPointIdentifier": "com.apple.widgetkit-extension"
+  }
+ },
+ "PooliMessage.appex": {
+  "CFBundleName": "PooliMessage",
+  "DTSDKName": "iphoneos26.2",
+  "DTXcode": "2620",
+  "LSApplicationQueriesSchemes": [
+   "com.miniclip.eightballpool",
+   "com.miniclip.8ballpoolmult"
+  ],
+  "DTSDKBuild": "23C53",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "5328",
+  "BuildMachineOSBuild": "25F71",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "XPC!",
+  "CFBundleShortVersionString": "56.30.0",
+  "CFBundleSupportedPlatforms": [
+   "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "PooliMessage",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "UIRequiredDeviceCapabilities": [
+   "arm64"
+  ],
+  "MinimumOSVersion": "13.0",
+  "CFBundleIdentifier": "com.miniclip.8ballpoolmult.PooliMessage",
+  "UIDeviceFamily": [
+   1,
+   2
+  ],
+  "DTPlatformVersion": "26.2",
+  "DTXcodeBuild": "17C52",
+  "CFBundleDisplayName": "8 Ball Pool",
+  "CFBundleIcons": {
+   "CFBundlePrimaryIcon": {
+    "CFBundleIconFiles": [
+     "Messages Icon60x45",
+     "Messages Icon67x50",
+     "Messages Icon74x55",
+     "Messages Icon27x20",
+     "Messages Icon32x24"
+    ]
+   }
+  },
+  "DTXcodeBuildDistribution": "14C18",
+  "MSMessagesExtensionStoreIconName": "Messages Icon",
+  "DTPlatformBuild": "23C53",
+  "Compatibility": "1.0",
+  "NSExtension": {
+   "NSExtensionPointIdentifier": "com.apple.message-payload-provider",
+   "NSExtensionMainStoryboard": "MainInterface"
+  }
+ }
+}

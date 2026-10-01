@@ -1,0 +1,82 @@
+{
+ "Payload/pool.app": [
+  "ar.lproj",
+  "de.lproj",
+  "eng.lproj",
+  "es.lproj",
+  "fr.lproj",
+  "hi.lproj",
+  "id.lproj",
+  "it.lproj",
+  "ja.lproj",
+  "ko.lproj",
+  "kor.lproj",
+  "pt-BR.lproj",
+  "pt-PT.lproj",
+  "pt.lproj",
+  "ru.lproj",
+  "tr.lproj",
+  "vi.lproj"
+ ],
+ "Payload/pool.app/BigoADSRes.bundle": [
+  "ar.lproj",
+  "bn-BD.lproj",
+  "bn-IN.lproj",
+  "de.lproj",
+  "en-IN.lproj",
+  "en.lproj",
+  "fr.lproj",
+  "gu.lproj",
+  "hi.lproj",
+  "it.lproj",
+  "ja.lproj",
+  "kn.lproj",
+  "mr.lproj",
+  "ms.lproj",
+  "ne.lproj",
+  "pa.lproj",
+  "ru.lproj",
+  "si.lproj",
+  "sv.lproj",
+  "ta.lproj",
+  "te.lproj",
+  "tr.lproj",
+  "ur.lproj",
+  "uz.lproj",
+  "zh-Hans.lproj"
+ ],
+ "Payload/pool.app/Frameworks/AppLovinSDK.framework/AppLovinSDKResources.bundle": [
+  "Base.lproj",
+  "de.lproj",
+  "en.lproj",
+  "es.lproj",
+  "fr.lproj",
+  "ja.lproj",
+  "ko.lproj",
+  "zh-Hans.lproj",
+  "zh-Hant.lproj"
+ ],
+ "Payload/pool.app/PlugIns/NotificationContent.appex": [
+  "Base.lproj"
+ ],
+ "Payload/pool.app/PlugIns/PoolWidgetExtension.appex": [
+  "ar.lproj",
+  "de.lproj",
+  "en.lproj",
+  "es.lproj",
+  "fr.lproj",
+  "hi.lproj",
+  "id.lproj",
+  "it.lproj",
+  "ja.lproj",
+  "ko.lproj",
+  "pt-BR.lproj",
+  "pt-PT.lproj",
+  "ru.lproj",
+  "tr.lproj",
+  "vi.lproj"
+ ],
+ "Payload/pool.app/PlugIns/PooliMessage.appex": [
+  "Base.lproj"
+ ]
+}

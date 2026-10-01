@@ -1,0 +1,84 @@
+/*
+  MrSpicy.strings (Arabic — العربية)
+  MR. SPICY UI v1.0.0
+
+  ملاحظات الترجمة / Translation notes:
+   - Arabic is a full RTL layout, not translated text in an LTR skeleton.
+     Layout mirroring is handled by SpicyLayoutDirection; this file only
+     carries text.
+   - Keep the key set identical to en.lproj/MrSpicy.strings.
+     validate_localization.py fails the build when the sets diverge.
+   - "MR. SPICY" is a brand name and is intentionally left in Latin script.
+*/
+
+/* الرأس */
+"spicy.header.title" = "MR. SPICY";
+"spicy.header.subtitle" = "طبقة الواجهة";
+"spicy.header.close" = "إغلاق";
+"spicy.header.minimise" = "تصغير";
+"spicy.header.expand" = "توسيع";
+"spicy.header.settings" = "الإعدادات";
+
+/* الإجراءات */
+"spicy.action.ok" = "موافق";
+"spicy.action.cancel" = "إلغاء";
+"spicy.action.close" = "إغلاق";
+"spicy.action.retry" = "إعادة المحاولة";
+"spicy.action.done" = "تم";
+"spicy.action.back" = "رجوع";
+"spicy.action.learn_more" = "معرفة المزيد";
+
+/* الحالات */
+"spicy.state.loading" = "جارٍ التحميل…";
+"spicy.state.success" = "تم";
+"spicy.state.error" = "حدث خطأ ما";
+"spicy.state.unavailable" = "غير متاح";
+"spicy.state.disabled" = "معطّل";
+"spicy.state.selected" = "محدَّد";
+"spicy.state.on" = "مُفعّل";
+"spicy.state.off" = "مُعطّل";
+
+/* الإعدادات */
+"spicy.settings.title" = "الإعدادات";
+"spicy.settings.section.general" = "عام";
+"spicy.settings.section.appearance" = "المظهر";
+"spicy.settings.section.accessibility" = "تسهيلات الاستخدام";
+"spicy.settings.section.about" = "حول";
+"spicy.settings.language" = "اللغة";
+"spicy.settings.language.hint" = "يغيّر لغة الواجهة واتجاه التخطيط.";
+"spicy.settings.appearance" = "السمة";
+"spicy.settings.appearance.system" = "حسب النظام";
+"spicy.settings.appearance.dark" = "داكن";
+"spicy.settings.appearance.light" = "فاتح";
+"spicy.settings.reduce_motion" = "تقليل الحركة";
+"spicy.settings.reduce_motion.hint" = "يعكس إعداد iOS. يمكن تغييره من الإعدادات › تسهيلات الاستخدام.";
+"spicy.settings.larger_text" = "حجم النص";
+"spicy.settings.larger_text.hint" = "يعكس إعداد حجم النص الديناميكي في iOS.";
+"spicy.settings.high_contrast" = "زيادة التباين";
+"spicy.settings.compact_layout" = "تخطيط مضغوط";
+"spicy.settings.version" = "إصدار الواجهة";
+"spicy.settings.help" = "المساعدة";
+"spicy.settings.legal" = "المعلومات القانونية";
+"spicy.settings.reset.title" = "إعادة ضبط إعدادات الواجهة؟";
+"spicy.settings.reset.message" = "ستعود اللغة والمظهر إلى الإعدادات الافتراضية. لن يتأثر أي شيء آخر.";
+"spicy.settings.reset.confirm" = "إعادة الضبط";
+
+/* اللغة */
+"spicy.language.title" = "اللغة";
+"spicy.language.english" = "English";
+"spicy.language.arabic" = "العربية";
+"spicy.language.changed" = "تم تغيير اللغة";
+
+/* حول */
+"spicy.about.title" = "حول";
+"spicy.about.ui_layer_version" = "إصدار طبقة الواجهة";
+"spicy.about.design_system" = "نظام التصميم";
+"spicy.about.credits" = "شكر وتقدير";
+
+/* تسهيلات الاستخدام */
+"spicy.a11y.logo" = "شعار MR. SPICY";
+"spicy.a11y.panel" = "لوحة MR. SPICY";
+"spicy.a11y.modal" = "مربع حوار";
+"spicy.a11y.tile.hint" = "يفتح هذا القسم";
+"spicy.a11y.row.hint" = "يعرض خيارات إضافية";
+"spicy.a11y.badge.value" = "الحالة: %@";
