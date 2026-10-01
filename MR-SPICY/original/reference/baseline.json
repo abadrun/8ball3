@@ -1,0 +1,27 @@
+{
+  "artifact_class": "ORIGINAL_BASELINE",
+  "filename": "8-ball-pool-i3rby-IPAOMTK.COM.ipa",
+  "path_from_repository_root": "8-ball-pool-i3rby-IPAOMTK.COM.ipa",
+  "size_bytes": 98576945,
+  "sha256": "59607b4177f8ffdf36649d9bb3b0c5900d39f5b6b3eaa0c6e351ba353a58c2f8",
+  "git_commit_containing_artifact": "9695a47d38d9a34edae6240d5d0895b38b52c454",
+  "mutable": false,
+  "write_policy": "NEVER_MODIFY",
+  "host_application": {
+    "bundle_identifier": "com.miniclip.8ballpoolmult",
+    "display_name": "8 Ball Pool",
+    "short_version": "56.30.0",
+    "build_version": "5328",
+    "minimum_os_version": "13.0",
+    "architectures": ["arm64"],
+    "device_family": [1, 2],
+    "publisher_team_id": "HLSX4DMBX6",
+    "rights_held_by_this_repository": "NONE"
+  },
+  "integrity_notes": [
+    "FairPlay DRM removed (Info.plist DecryptedBy, SC_Info emptied, cryptid=0 on all Mach-O images)",
+    "Unsigned framework Frameworks/libloader.framework injected as the last LC_LOAD_DYLIB of pool",
+    "No embedded.mobileprovision; publisher signature no longer matches binary content"
+  ],
+  "mr_spicy_modifications_to_this_artifact": "NONE"
+}

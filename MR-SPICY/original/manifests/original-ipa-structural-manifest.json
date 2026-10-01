@@ -1,0 +1,140 @@
+{
+ "ipa_filename": "8-ball-pool-i3rby-IPAOMTK.COM.ipa",
+ "ipa_size_bytes": 98576945,
+ "sha256": "59607b4177f8ffdf36649d9bb3b0c5900d39f5b6b3eaa0c6e351ba353a58c2f8",
+ "generated_utc": "2026-10-01T07:02:21Z",
+ "app_bundle": "pool.app",
+ "bundle_identifier": "com.miniclip.8ballpoolmult",
+ "short_version": "56.30.0",
+ "build_version": "5328",
+ "minimum_os_version": "13.0",
+ "device_family": [
+  1,
+  2
+ ],
+ "architectures": [
+  "arm64/all"
+ ],
+ "frameworks": [
+  "AdSurgeSDK.framework",
+  "AppLovinSDK.framework",
+  "BigoADS.framework",
+  "DTBiOSSDK.framework",
+  "FBAudienceNetwork.framework",
+  "FBLPromises.framework",
+  "FirebaseAnalytics.framework",
+  "FirebaseCore.framework",
+  "FirebaseCoreExtension.framework",
+  "FirebaseCoreInternal.framework",
+  "FirebaseCrashlytics.framework",
+  "FirebaseInstallations.framework",
+  "FirebaseRemoteConfigInterop.framework",
+  "FirebaseSessions.framework",
+  "GoogleAdsOnDeviceConversion.framework",
+  "GoogleAppMeasurement.framework",
+  "GoogleAppMeasurementIdentitySupport.framework",
+  "GoogleDataTransport.framework",
+  "GoogleUtilities.framework",
+  "InMobiSDK.framework",
+  "MolocoSDK.framework",
+  "OMSDK_Appodeal.framework",
+  "Promises.framework",
+  "libloader.framework",
+  "libswift_Concurrency.dylib",
+  "nanopb.framework"
+ ],
+ "app_extensions": [
+  "NotificationContent.appex",
+  "NotificationService.appex",
+  "PoolWidgetExtension.appex",
+  "PooliMessage.appex"
+ ],
+ "localizations": [
+  "ar",
+  "de",
+  "eng",
+  "es",
+  "fr",
+  "hi",
+  "id",
+  "it",
+  "ja",
+  "ko",
+  "kor",
+  "pt",
+  "pt-BR",
+  "pt-PT",
+  "ru",
+  "tr",
+  "vi"
+ ],
+ "mach_o_count": 31,
+ "unsigned_binaries": [
+  "Payload/pool.app/Frameworks/libloader.framework/libloader"
+ ],
+ "signing_status": "SIGNING NOT VERIFIED \u2014 see validation report",
+ "installation_test": "INSTALLATION TEST NOT PERFORMED",
+ "validation_status": "FAIL",
+ "checks": [
+  {
+   "check": "payload layout",
+   "status": "PASS",
+   "detail": "Payload/pool.app"
+  },
+  {
+   "check": "Info.plist required keys",
+   "status": "PASS",
+   "detail": "all present"
+  },
+  {
+   "check": "orientations declared",
+   "status": "PASS",
+   "detail": "UIInterfaceOrientationLandscapeRight, UIInterfaceOrientationLandscapeLeft"
+  },
+  {
+   "check": "app icon declared",
+   "status": "PASS",
+   "detail": "{\"CFBundleIconFiles\": [\"AppIcon60x60\"], \"CFBundleIconName\": \"AppIcon\"}"
+  },
+  {
+   "check": "main executable present",
+   "status": "PASS",
+   "detail": "Payload/pool.app/pool"
+  },
+  {
+   "check": "architectures",
+   "status": "PASS",
+   "detail": "arm64/all"
+  },
+  {
+   "check": "FairPlay encryption state",
+   "status": "PASS",
+   "detail": "all cryptid=0"
+  },
+  {
+   "check": "all Mach-O images signed",
+   "status": "FAIL",
+   "detail": "UNSIGNED: ['Payload/pool.app/Frameworks/libloader.framework/libloader']"
+  },
+  {
+   "check": "nested components inventoried",
+   "status": "PASS",
+   "detail": "26 frameworks, 4 extensions, 16 resource bundles"
+  },
+  {
+   "check": "framework linkage resolves inside bundle",
+   "status": "PASS",
+   "detail": "all resolved"
+  },
+  {
+   "check": "embedded.mobileprovision",
+   "status": "FAIL",
+   "detail": "absent \u2014 IPA is not provisioned for installation"
+  },
+  {
+   "check": "localisations",
+   "status": "PASS",
+   "detail": "ar, de, eng, es, fr, hi, id, it, ja, ko, kor, pt, pt-BR, pt-PT, ru, tr, vi"
+  }
+ ]
+}
